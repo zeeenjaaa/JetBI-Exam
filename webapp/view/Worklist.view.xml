@@ -1,72 +1,33 @@
-<mvc:View
-	controllerName="ControlTaskNS.ControlTask-Zenchyk.controller.Worklist"
-	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:semantic="sap.f.semantic">
-
-	<semantic:SemanticPage
-		id="page"
-		headerPinnable="false"
-		toggleHeaderOnTitleClick="false">
-
+<mvc:View controllerName="ControlTaskNS.ControlTask-Zenchyk.controller.Worklist" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:semantic="sap.f.semantic" xmlns:smartFilterBar="sap.ui.comp.smartfilterbar" xmlns:smartTable="sap.ui.comp.smarttable">
+	<semantic:SemanticPage id="page" headerPinnable="false" toggleHeaderOnTitleClick="false">
 		<semantic:titleHeading>
-			<Title text="{i18n>worklistTitle}" />
+			<!--<Title text="{i18n>worklistTitle}" />-->
 		</semantic:titleHeading>
-
+		<semantic:headerContent>
+			<smartFilterBar:SmartFilterBar id="smartFilterBar" entitySet="zjblessons_base_Materials" liveMode="false" persistencyKey="pk_MaterialSFB"/>
+			<Button type="Default" text="{i18n>tHeaderButton}" press="onPressHeaderButton" icon="sap-icon://activate"/>
+		</semantic:headerContent>
 		<semantic:content>
-			<Table
-				id="table"
-				width="auto"
-				items="{
-					path: '/zjblessons_base_Materials',
-					sorter: {
-						path: 'MaterialText',
-						descending: false
-					}
-				}"
-				noDataText="{worklistView>/tableNoDataText}"
-				busyIndicatorDelay="{worklistView>/tableBusyDelay}"
-				growing="true"
-				growingScrollToLoad="true"
-				updateFinished="onUpdateFinished">
-
-				<headerToolbar>
+			<smartTable:SmartTable id="smartTableMaterialsID" entitySet="zjblessons_base_Materials" smartFilterId="smartFilterBar"
+				useExportToExcel="true" beforeExport="onBeforeExport" tableType="ResponsiveTable" useVariantManagement="true" useTablePersonalisation="true"
+				placeToolbarInTable="true" header="Materials" showRowCount="true" persistencyKey="pk_MaterialSF" enableAutoBinding="true"
+				showFullScreenButton="true" enableAutoColumnWidth="true" editTogglable="false">
+				<smartTable:customToolbar>
 					<Toolbar>
-						<Title id="tableHeader" text="{worklistView>/worklistTableTitle}"/>
-						<ToolbarSpacer />
-						<SearchField
-							id="searchField"
-							tooltip="{i18n>worklistSearchTooltip}"
-							search="onSearch"
-							width="auto">
-						</SearchField>
+						<Button type="Default" text="{i18n>tToolbarButton}" press="onPressToolbarButton"/>
+						<ToolbarSpacer/>
+						<!--<SearchField id="searchField" tooltip="{i18n>worklistSearchTooltip}" search="onSearch" width="auto"></SearchField>-->
 					</Toolbar>
-				</headerToolbar>
-
-				<columns>
-					<Column id="nameColumn">
-						<Text text="{i18n>tableNameColumnTitle}" id="nameColumnTitle"/>
-					</Column>
-				</columns>
-
-				<items>
-					<ColumnListItem
-						type="Navigation"
-						press="onPress">
-						<cells>
-							<ObjectIdentifier
-								title="{MaterialText}"/>
-						</cells>
-					</ColumnListItem>
-				</items>
-			</Table>
+				</smartTable:customToolbar>
+				<Table id="table" mode="SingleSelect" width="auto" growing="true" growingScrollToLoad="true" growingThreshold="20"
+					updateFinished="onUpdateFinished" delete="onPressDelete">
+					<columns></columns>
+					<items>
+						<ColumnListItem type="Navigation" press="onPress"></ColumnListItem>
+					</items>
+				</Table>
+			</smartTable:SmartTable>
 		</semantic:content>
-
-		<semantic:sendEmailAction>
-			<semantic:SendEmailAction id="shareEmail" press="onShareEmailPress"/>
-		</semantic:sendEmailAction>
-
-
 	</semantic:SemanticPage>
-
 </mvc:View>

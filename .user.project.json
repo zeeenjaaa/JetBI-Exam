@@ -1,138 +1,139 @@
 {
-	"run": [
-		{
-			"filePath": "/ControlTask-Zenchyk/webapp/index.html",
-			"previewMode": 1,
-			"dataMode": 1,
-			"workspace": "withoutWorkspace",
-			"urlParameters": [
-				{
-					"paramName": "",
-					"paramValue": "",
-					"paramActive": false
-				},
-				{
-					"paramName": "",
-					"paramValue": "",
-					"paramActive": false
-				}
-			],
-            "hashParameter": "",
-			"ui5ActiveVersion": "snapshot",
-			"ui5VerSource": null,
-			"isDefaultVersion": 1,
-			"_metadata": {
-				"id": "8104295",
-				"runnerId": "webapprunner",
-				"displayName": "App"
-			}
-		},
-		{
-			"filePath": "/ControlTask-Zenchyk/webapp/test/mockServer.html",
-			"previewMode": 1,
-			"dataMode": 1,
-			"workspace": "withoutWorkspace",
-			"urlParameters": [
-				{
-					"paramName": "",
-					"paramValue": "",
-					"paramActive": false
-				},
-				{
-					"paramName": "",
-					"paramValue": "",
-					"paramActive": false
-				}
-			],
-			"hashParameter": "",
-			"ui5ActiveVersion": "snapshot",
-			"ui5VerSource": null,
-			"isDefaultVersion": 1,
-			"_metadata": {
-				"id": "7450576",
-				"runnerId": "webapprunner",
-				"displayName": "App (Mock Server)"
-			}
-		},
-		{
-			"filePath": "/ControlTask-Zenchyk/webapp/test/unit/unitTests.qunit.html",
-			"previewMode": 1,
-			"dataMode": 1,
-			"workspace": "withoutWorkspace",
-			"ui5ActiveVersion": "snapshot",
-			"ui5VerSource": null,
-			"isDefaultVersion": 1,
-			"urlParameters": [
-				{
-					"paramName": "",
-					"paramValue": "",
-					"paramActive": false
-				},
-				{
-					"paramName": "",
-					"paramValue": "",
-					"paramActive": false
-				}
-			],
-			"_metadata": {
-				"id": "9884851",
-				"runnerId": "webapprunner",
-				"displayName": "Unit Tests"
-			}
-		},
-		{
-			"filePath": "/ControlTask-Zenchyk/webapp/test/integration/opaTests.qunit.html",
-			"previewMode": 1,
-			"dataMode": 1,
-			"workspace": "withoutWorkspace",
-			"ui5ActiveVersion": "snapshot",
-			"ui5VerSource": null,
-			"isDefaultVersion": 1,
-			"urlParameters": [
-				{
-					"paramName": "",
-					"paramValue": "",
-					"paramActive": false
-				},
-				{
-					"paramName": "",
-					"paramValue": "",
-					"paramActive": false
-				}
-			],
-			"hashParameter": "",
-			"_metadata": {
-				"id": "3393712",
-				"runnerId": "webapprunner",
-				"displayName": "OPA Tests"
-			}
-		},
-		{
-			"filePath": "/ControlTask-Zenchyk/webapp/test/testsuite.qunit.html",
-			"previewMode": 1,
-			"dataMode": 1,
-			"workspace": "withoutWorkspace",
-			"ui5ActiveVersion": "snapshot",
-			"ui5VerSource": null,
-			"isDefaultVersion": 1,
-			"urlParameters": [
-				{
-					"paramName": "",
-					"paramValue": "",
-					"paramActive": false
-				},
-				{
-					"paramName": "",
-					"paramValue": "",
-					"paramActive": false
-				}
-			],
-			"hashParameter": "",
-			"_metadata": {
-				"id": "8622754",
-				"runnerId": "webapprunner",
-				"displayName": "Test Suite (Unit, OPA)"
-			}
-		}
-	]
+  "run": [
+    {
+      "filePath": "/ControlTask-Zenchyk/webapp/index.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        },
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        }
+      ],
+      "hashParameter": "",
+      "ui5ActiveVersion": "snapshot",
+      "ui5VerSource": null,
+      "isDefaultVersion": 1,
+      "_metadata": {
+        "id": "8104295",
+        "runnerId": "webapprunner",
+        "displayName": "App",
+        "lastRunTimeStamp": 1647447321696
+      }
+    },
+    {
+      "filePath": "/ControlTask-Zenchyk/webapp/test/mockServer.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        },
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        }
+      ],
+      "hashParameter": "",
+      "ui5ActiveVersion": "snapshot",
+      "ui5VerSource": null,
+      "isDefaultVersion": 1,
+      "_metadata": {
+        "id": "7450576",
+        "runnerId": "webapprunner",
+        "displayName": "App (Mock Server)"
+      }
+    },
+    {
+      "filePath": "/ControlTask-Zenchyk/webapp/test/unit/unitTests.qunit.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": "snapshot",
+      "ui5VerSource": null,
+      "isDefaultVersion": 1,
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        },
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        }
+      ],
+      "_metadata": {
+        "id": "9884851",
+        "runnerId": "webapprunner",
+        "displayName": "Unit Tests"
+      }
+    },
+    {
+      "filePath": "/ControlTask-Zenchyk/webapp/test/integration/opaTests.qunit.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": "snapshot",
+      "ui5VerSource": null,
+      "isDefaultVersion": 1,
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        },
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        }
+      ],
+      "hashParameter": "",
+      "_metadata": {
+        "id": "3393712",
+        "runnerId": "webapprunner",
+        "displayName": "OPA Tests"
+      }
+    },
+    {
+      "filePath": "/ControlTask-Zenchyk/webapp/test/testsuite.qunit.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": "snapshot",
+      "ui5VerSource": null,
+      "isDefaultVersion": 1,
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        },
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        }
+      ],
+      "hashParameter": "",
+      "_metadata": {
+        "id": "8622754",
+        "runnerId": "webapprunner",
+        "displayName": "Test Suite (Unit, OPA)"
+      }
+    }
+  ]
 }
