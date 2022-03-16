@@ -3,12 +3,14 @@ sap.ui.define([
 		"ControlTaskNS/ControlTask-Zenchyk/controller/BaseController",
 		"sap/ui/model/json/JSONModel",
 		"sap/ui/core/routing/History",
-		"ControlTaskNS/ControlTask-Zenchyk/model/formatter"
+		"ControlTaskNS/ControlTask-Zenchyk/model/formatter",
+		'sap/m/MessageToast'
 	], function (
 		BaseController,
 		JSONModel,
 		History,
-		formatter
+		formatter,
+		MessageToast
 	) {
 		"use strict";
 
@@ -84,6 +86,7 @@ sap.ui.define([
 						MaterialID :  sObjectId
 					});
 					this._bindView("/" + sObjectPath);
+					MessageToast.show(sObjectId);
 				}.bind(this));
 			},
 
